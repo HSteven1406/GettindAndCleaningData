@@ -67,5 +67,6 @@ temp <- cbind(temp,total_subject)
 ### Gives a new data set with average of each variable by activity by subject
 averages = temp %>% group_by(activity_labels,subject) %>% summarise_all(mean)
 
+write.table(averages,row.name=F, file='AverageTidySet.txt')
 
 setwd(old.dir)
