@@ -68,4 +68,4 @@ temp <- cbind(temp,total_subject)
 averages = temp %>% group_by(activity_labels,subject) %>% summarise_all(mean)
 
 
-setwd(old.di)
+setwd(old.dir)
