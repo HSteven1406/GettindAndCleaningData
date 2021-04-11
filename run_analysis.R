@@ -32,7 +32,7 @@ Cols_to_keep <- grep('mean|std', features[,2])
 ### Extracts the columns from total_data and add names 
 Data_to_keep <- total_data[,Cols_to_keep]
 Colnames <- features[Cols_to_keep,2]
-names(Data_to_keep) <- Colnames ####### -> maybe to change for tidy data set
+names(Data_to_keep) <- Colnames
 
 ### Constructs table with each label, add their respective names, binds this table with Data_to_keep
 test_label_file <- './UCI HAR Dataset/test/y_test.txt'
